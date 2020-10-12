@@ -9,6 +9,8 @@ import MenuIcon from '@material-ui/icons/Menu';
 import CarouselImage from './CarouselImage'
 import FormDonate from './FormDonate';
 import HelpAnimal from './HelpAnimal'
+import TimeToAct from './TimeToAct'
+import SavedAnimal from './SavedAnimal'
 
 export default class DashBoard extends React.Component {
     render() {
@@ -34,6 +36,8 @@ export default class DashBoard extends React.Component {
                 <CarouselImage />
                 <FormDonate />
                 <HelpAnimal />
+                <TimeToAct />
+                <SavedAnimal />
             </div>
         );
     }
