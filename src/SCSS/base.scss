@@ -3,6 +3,7 @@ $toolbar-color:rgb(68, 65, 65);
     display: flex;
     flex-direction: column;
     width: 100%;
+    align-items: center;
   
 }
 .toolBarContainer{
@@ -14,6 +15,7 @@ $toolbar-color:rgb(68, 65, 65);
     position: fixed;
     top: 0px;
     z-index: 1;
+    background-color:$toolbar-color;
 }
 .toolbar{
     display: flex;

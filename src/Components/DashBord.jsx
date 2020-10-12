@@ -7,7 +7,8 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import MenuIcon from '@material-ui/icons/Menu';
 import CarouselImage from './CarouselImage'
-import FormDonate from './FormDonate'
+import FormDonate from './FormDonate';
+import HelpAnimal from './HelpAnimal'
 
 export default class DashBoard extends React.Component {
     render() {
@@ -32,6 +33,7 @@ export default class DashBoard extends React.Component {
                 </div>
                 <CarouselImage />
                 <FormDonate />
+                <HelpAnimal />
             </div>
         );
     }
