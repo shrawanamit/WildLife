@@ -20,9 +20,10 @@ export default class SavedAnimal extends React.Component {
                 <div className="galleryContainer">
                 { this.state.image.map((row)=>
                     <div className="gallery">
-                        
+                        <div className="galleryDiv">
                         <img src={row} className="galleryImage"/>
-                     
+                        </div>
+                         <div className="zoom">ZOOM</div>
                     </div>)}
                 </div>
 
