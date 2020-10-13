@@ -1,0 +1,73 @@
+
+.AboutWildLifeContainer{
+    width: 100%;
+    background-color:rgb(50, 50, 50) ;
+
+}
+.AboutWildLifeBody{
+    display: flex;
+    padding: 120px 70px 95px 80px;
+}
+.aboutUsImageMessage{
+    padding: 50px;
+}
+.aboutUsImage{
+    width: 500px;
+}
+.aboutUsImageContainer{
+    padding: 30px;
+}
+.aboutUsBgColor{
+    width: 100%;
+}
+.aboutTeamContainer{
+    padding: 85px 0px 85px 0px;;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.aboutTeamBody{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    width: 25%;
+    align-items: center;
+    text-align: center;
+}
+.teamHeading{
+    padding: 12px 0px 12px 0px ;
+    font-size: 27px;
+    font-weight: 600;
+}
+.aboutTeam{
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 0.85;
+}
+.counterContainer{
+    width: 100%;
+    background-image: url("../assets/bg-image-2.jpg");
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+}
+.counterBody{
+    color: white;
+    text-align: center;
+}
+.counter{
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    color: transparent;
+     -webkit-text-stroke: 4px lightgrey;
+    font-size: 8rem;
+}
+.counterHeading{
+    font-size: 22px;
+    color: orange;
+    font-weight: 500;
+}

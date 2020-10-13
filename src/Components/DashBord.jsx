@@ -11,6 +11,7 @@ import FormDonate from './FormDonate';
 import HelpAnimal from './HelpAnimal'
 import TimeToAct from './TimeToAct'
 import SavedAnimal from './SavedAnimal'
+import  AboutWildLife from  './AboutWildLife'
 
 export default class DashBoard extends React.Component {
     render() {
@@ -38,6 +39,7 @@ export default class DashBoard extends React.Component {
                 <HelpAnimal />
                 <TimeToAct />
                 <SavedAnimal />
+                <AboutWildLife />
             </div>
         );
     }
