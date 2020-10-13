@@ -24,6 +24,7 @@ export default class HelpAnimal extends React.Component {
                     <div className="helpAnimalBody">
                         <div className="helpAnimalImage">
                             <img src={Lions}  className="helpAnimalImage"/>
+                            <div className="donate">DONATE</div>
                         </div>
                         <span className="helpAnimalImageHeading">LIONS</span>
                         <span className="helpAnimalDonatePrice">$340K DONATED</span>
@@ -31,6 +32,7 @@ export default class HelpAnimal extends React.Component {
                     <div className="helpAnimalBody">
                         <div className="helpAnimalImage">
                             <img src={cheetah} className="helpAnimalImage"/>
+                            <div className="donate">DONATE</div>
                         </div>
                         <span className="helpAnimalImageHeading">CHEETAHS</span>
                         <span className="helpAnimalDonatePrice">$340K DONATED</span>
@@ -38,6 +40,7 @@ export default class HelpAnimal extends React.Component {
                     <div className="helpAnimalBody">
                         <div className="helpAnimalImage">
                             <img src={Tiger} className="helpAnimalImage"/>
+                            <div className="donate">DONATE</div>
                         </div>
                         <span className="helpAnimalImageHeading">TIGERS</span>
                         <span className="helpAnimalDonatePrice">$340K DONATED</span>

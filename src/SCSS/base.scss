@@ -71,3 +71,10 @@ top: 20%;
 z-index: 0;
 display: flex;
 }
+.carousel-control-next-icon{
+  &:hover{
+    color: orange !important;
+  }
+    
+ 
+}

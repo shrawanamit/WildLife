@@ -1,8 +1,8 @@
 import React from 'react';
 import '../SCSS/aboutwildlife.scss';
 import AboutUs from '../assets/about-us.jpg'
-import Heading from './OverWridenHeading';
 import bgcolor from '../assets/about-us-bg.png'
+import Button from 'react-bootstrap/Button'
 
 export default class AboutWildLife extends React.Component {
     constructor(props) {
@@ -21,7 +21,15 @@ export default class AboutWildLife extends React.Component {
                             <img src={AboutUs} className="aboutUsImage" />
                         </div>
                         <div className="aboutUsImageMessage">
-                            <Heading />
+                            <div className="helpAnimalHeading">
+                                <span className="base">ABOUT US</span>
+                                <span className="upper">About Wildlife</span>
+                            </div>
+                            <div className="aboutUsImageParagraph">
+                                <span>Wildlife is devoted to the conservation of the world’s wild cats and dozens of other endangered species.</span><br /><br />
+                                <span>Our team of leading biologists and law enforcement experts develop innovative strategies to address the dire threats facing the wild animals globally.</span>
+                            </div>
+                            <Button variant="warning" size="lg">READ MORE</Button>{' '}
                         </div>
                     </div>
                     <img src={bgcolor} className="aboutUsBgColor" />

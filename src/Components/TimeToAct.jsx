@@ -13,7 +13,7 @@ export default class TimeToAct extends React.Component {
                     <span className="timeToActHeading"> TO ACT</span>
                 </div>
                 <div className="readMore">
-                    <Button variant="warning" size="lg">Read More</Button>{' '}
+                    <Button variant="warning" size="lg">READ MORE</Button>{' '}
                 </div>
 
             </div>

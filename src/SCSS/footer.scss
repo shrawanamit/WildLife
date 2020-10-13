@@ -23,3 +23,14 @@
 .MuiIconButton-root{
     color: white !important;
 }
+.MuiIconButton-root{
+    background-color: rgb(75, 74, 74) !important;
+}
+.MuiIconButton-root{
+    &:hover{
+        background-color: orange !important;
+    }
+}
+.facebook{
+    padding: 20px;
+}

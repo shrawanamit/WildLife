@@ -88,3 +88,17 @@
     box-shadow: 0 0 0 25px rgba(255, 255, 255, 0.4);
  }
 }
+.btn-warning{
+    background-color: white;
+    color: rgb(71, 70, 70);
+    font-weight: bold;
+    border: none;
+    padding: 15px 20px 15px 20px ;
+    transition:all 1s linear;
+    
+}
+.btn-warning{
+  &:hover{
+      color: white;
+  }
+}

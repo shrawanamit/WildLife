@@ -29,7 +29,7 @@ export default class FormDonate extends React.Component {
                             </Col>
                             <Col md="3" >
                                 <Button variant="warning" size="lg">
-                                    Donate Now
+                                    DONATE NOW
                                  </Button>{' '}
                             </Col>
                         

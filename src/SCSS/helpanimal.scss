@@ -53,11 +53,44 @@
     flex-wrap: wrap;
 
 }
+.donate{
+    position: absolute;
+    left: 44%;
+    top: 42%;
+    padding: 15px 18px 15px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #FEBF1C;
+    font-weight: bold;
+    transition:all 1s linear;
+}
 .helpAnimalBody{
     padding: 10px 10px 10px 10px;
     @include flexColoumCenter();
     text-align: center;
+    position: relative;
+    .donate{
+        display: none;
+    }
+    
 }
+.helpAnimalBody{
+    &:hover { 
+        .donate{
+            display: flex;
+            top:50% ;
+            transition:all 1s linear;
+        }
+    }
+}
+.donate{
+    &:hover{
+        background-color: rgb(68, 65, 65);
+        // color: white;
+    }
+}
+
 .helpAnimalImage{
     width:420px ;
 }

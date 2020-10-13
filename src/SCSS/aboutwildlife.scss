@@ -10,6 +10,9 @@
 }
 .aboutUsImageMessage{
     padding: 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
 }
 .aboutUsImage{
     width: 500px;
@@ -70,4 +73,29 @@
     font-size: 22px;
     color: orange;
     font-weight: 500;
+}
+.base{
+    position: relative;
+    font-family: "Lato", sans-serif;
+    font-weight: 800;
+    color: transparent;
+     -webkit-text-stroke: 2px lightgrey;
+    font-size: 4rem;
+}
+.upper{
+    position: absolute;
+    font-family: "Lato", sans-serif;
+    font-weight: 800;
+    color: #151515;
+    font-size: 4rem;
+
+}
+.aboutUsImageParagraph{
+    
+    text-align: left;
+    padding: 10px 0px 25px 0px;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    opacity: 0.8;
 }

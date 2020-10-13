@@ -19,18 +19,27 @@ export default class Footer extends React.Component {
                     ABOUT  |  NEWS  |  CONTACTS  |  GALLERY  | DONATE
                 </div>
                 <div className="footerIcons">
-                    <IconButton >
-                        <FacebookIcon fontSize="large" />
-                    </IconButton>
-                    <IconButton  >
-                        <InstagramIcon fontSize="large" />
-                    </IconButton>
-                    <IconButton  >
-                        <TwitterIcon fontSize="large" />
-                    </IconButton>
-                    <IconButton  >
-                        <YouTubeIcon fontSize="large" />
-                    </IconButton>
+                    <span className="facebook">
+                        <IconButton  >
+                            <FacebookIcon fontSize="large" />
+                        </IconButton>
+                    </span>
+                    <span className="facebook">
+                        <IconButton  >
+                            <InstagramIcon fontSize="large" />
+                        </IconButton>
+                    </span>
+                    <span className="facebook">
+                        <IconButton  >
+                            <TwitterIcon fontSize="large" />
+                        </IconButton>
+                    </span>
+                    <span className="facebook">
+                        <IconButton  >
+                            <YouTubeIcon fontSize="large" />
+                        </IconButton>
+                    </span>
+
                 </div>
                 <div className="footerCopyRights">
                     ©  2020 Wildlife. All Rights Reserved. Privacy Policy
