@@ -1,0 +1,25 @@
+.footerContainer{
+    width: 100%;
+    background-color:rgb(50, 50, 50) ;
+    height: 525px;
+    display: flex;
+    flex-direction: column;;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.footerHeading{
+    padding: 40px;
+    font-size: 25px;
+    font-weight: 400;
+}
+// .footerIcons{
+//     padding: 10px;
+// }
+.footerCopyRights{
+  padding: 70px 0px 70px 0px;
+  opacity: 0.8;
+}
+.MuiIconButton-root{
+    color: white !important;
+}
