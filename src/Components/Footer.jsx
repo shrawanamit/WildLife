@@ -16,7 +16,11 @@ export default class Footer extends React.Component {
                 </div>
 
                 <div className="footerHeading">
-                    ABOUT  |  NEWS  |  CONTACTS  |  GALLERY  | DONATE
+                    <span > ABOUT </span><span className="division"> | </span>
+                    <span > NEWS </span><span className="division"> | </span>
+                    <span > CONTACTS </span><span className="division"> | </span>
+                    <span > GALLERY </span><span className="division"> | </span>
+                    <span > DONATE </span>
                 </div>
                 <div className="footerIcons">
                     <span className="facebook">

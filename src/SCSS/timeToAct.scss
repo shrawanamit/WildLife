@@ -50,7 +50,7 @@
     transition: all .4s;
 }
 .gallery{
-    padding: 25px 35px 15px 0px;
+    padding: 25px 17px 15px 17px;
     justify-content: space-between;
     display: flex;
     position: relative;
@@ -101,4 +101,15 @@
   &:hover{
       color: white;
   }
+}
+@media only screen and (max-width: 500px) {
+    .timeToActHeading{
+        font-size: 3rem;
+    }
+    .timeToActTime{
+        font-size: 3rem;
+    }
+    .TimeToActContainer{
+       text-align: center;
+    }
 }

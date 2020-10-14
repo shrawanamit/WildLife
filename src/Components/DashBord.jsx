@@ -38,10 +38,10 @@ export default class DashBoard extends React.Component {
                             <spam className="aboutUs">ABOUT US</spam>
                             <spam  className="aboutUs">PROJECT</spam>
                             <spam  className="aboutUs">DONATE</spam>
-                            <FacebookIcon />
-                            <InstagramIcon />
-                            <TwitterIcon />
-                            <YouTubeIcon />
+                            <spam  className="aboutUs"> <FacebookIcon /></spam>
+                            <spam  className="aboutUs"><InstagramIcon /></spam>
+                            <spam  className="aboutUs"><TwitterIcon /></spam>
+                            <spam  className="aboutUs"><YouTubeIcon /></spam>
                             <div  className="toggelSideNav" onClick={this.handelDrawer}>
                                 {this.state.open ? <MenuIcon /> : <ArrowBackIcon />}
                                 {this.state.open ?"":<div className="sideNav">

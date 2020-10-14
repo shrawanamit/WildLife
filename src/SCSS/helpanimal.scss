@@ -104,3 +104,35 @@
     font-weight: 400;
     color: orange;
 }
+@media only screen and (max-width: 500px) {
+    .savedAnimalContainer{
+       padding: 85px 10px 85px 10px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+    }
+    .basetext{
+        font-size: 1.5rem;
+    }
+    .uppertext{
+        font-size: 1.5rem;
+    }
+    .galleryContainer{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .gallery{
+        // padding: 25px 10px 25px 10px;
+        padding-right: 10px;
+        
+        flex-direction: column;
+    }
+    .helpAnimalBody{
+      width: 320px;
+    }
+    .helpAnimalImage{
+        width: 100%;
+    }
+
+}

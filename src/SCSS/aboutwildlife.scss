@@ -99,3 +99,57 @@
     color: white;
     opacity: 0.8;
 }
+@media only screen and (max-width: 500px) {
+    .AboutWildLifeBody{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .aboutUsImage{
+       width: 100%; 
+    }
+    .aboutUsImageContainer{
+       padding: 0px;
+        justify-content: center;
+        width: 339px;
+    }
+    .aboutUsImageMessage{
+        padding: 0px;
+    padding-top:20px;
+    }
+    .helpAnimalHeading{
+        width: 100%;
+    }
+    .base{
+       font-size: 2.5rem;
+    }
+    .upper{
+        font-size: 2.5rem;
+    }
+    .aboutUsImageParagraph{
+    text-align: center;
+    }
+    .aboutTeamContainer{
+        flex-direction: column;
+        width: 100%;
+    }
+    .aboutTeamBody{
+        width: 100%;
+    }
+    .counterContainer{
+      padding: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+      height: 500px;
+    }
+    .counterBody{
+        margin: 10px;
+    }
+    .counter{
+     font-size: 4rem;
+    }
+    .counterHeading{
+        font-size: 16px;
+    }
+}
