@@ -14,8 +14,49 @@ $toolbar-color:rgb(68, 65, 65);
     justify-content: center;
     position: fixed;
     top: 0px;
-    z-index: 1;
+    z-index: 100;
     background-color:$toolbar-color;
+   
+}
+.aboutUs{
+    &:hover{
+        color: orange;
+    }
+}
+.sideNav{
+    color: #ffffff;
+    border: 1px solid #444141;
+    box-shadow: 0px 0px 15px rgba(21, 21, 21, 0.35);
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    right: 0;
+    z-index: 1101;
+    width: 450px;
+    // padding: 94px 0 0 0;
+    background: #3C3C3C;
+    // transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    // transform: translateX(100%);
+    box-shadow: 0 0 13px 0 rgba(21, 21, 21, 0.3);
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+
+}
+.home{
+    font-size: 18px;
+    padding: 19px 30px 19px 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    
+}
+.home{
+ &:hover{
+     color: orange;
+    
+ }
+}
+.toggelSideNav{
+    transition: 0.5s;
 }
 .toolbar{
     display: flex;
@@ -40,6 +81,7 @@ $toolbar-color:rgb(68, 65, 65);
     color: white;
     font-weight: 600;
     font-size: 18px;
+    
 
 }
 .bigFont{
