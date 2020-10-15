@@ -3,15 +3,23 @@ import '../SCSS/aboutwildlife.scss';
 import AboutUs from '../assets/about-us.jpg'
 import bgcolor from '../assets/about-us-bg.png'
 import Button from 'react-bootstrap/Button'
+import CountUp from "react-countup";
+import VisibilitySensor from "react-visibility-sensor";
 
 export default class AboutWildLife extends React.Component {
     constructor(props) {
         super(props); {
             this.state = {
-
+                didViewCountUp: false,
             }
         }
     }
+    onVisibilityChange = isVisible => {
+        if (isVisible) {
+            this.setState({ didViewCountUp: true });
+        }
+    }
+
     render() {
         return (
             <React.Fragment>
@@ -59,29 +67,45 @@ export default class AboutWildLife extends React.Component {
                     </div>
 
                 </div>
-                <div className="counterContainer">
-                    <div className="counterBody">
-                        <div className="counter">50
+                <VisibilitySensor onChange={this.onVisibilityChange} offset={{
+                    top:
+                        10
+                }} delayedCall>
+                    <div className="counterContainer">
+                        <div className="counterBody">
+                            <div className="counter"><CountUp
+                                start={0}
+                                end={50}
+                                duration={2}></CountUp>
+                            </div>
+                            <span className="counterHeading">SAVED SPECIES</span>
                         </div>
-                        <span className="counterHeading">SAVED SPECIES</span>
-                    </div>
-                    <div className="counterBody">
-                        <div className="counter">92
+                        <div className="counterBody">
+                            <div className="counter"><CountUp
+                                start={0}
+                                end={92}
+                                duration={2}></CountUp>
                         </div>
-                        <span className="counterHeading">TEAM MEMBERS</span>
-                    </div>
-                    <div className="counterBody">
-                        <div className="counter">340
+                            <span className="counterHeading">TEAM MEMBERS</span>
                         </div>
-                        <span className="counterHeading">DAILY DONATIONS</span>
-                    </div>
-                    <div className="counterBody">
-                        <div className="counter">4
+                        <div className="counterBody">
+                            <div className="counter"><CountUp
+                                start={0}
+                                end={340}
+                                duration={2}></CountUp>
                         </div>
-                        <span className="counterHeading">PARTNERS</span>
+                            <span className="counterHeading">DAILY DONATIONS</span>
+                        </div>
+                        <div className="counterBody">
+                            <div className="counter"><CountUp
+                                start={0}
+                                end={4}
+                                duration={2}></CountUp>
+                        </div>
+                            <span className="counterHeading">PARTNERS</span>
+                        </div>
                     </div>
-                </div>
-
+                </VisibilitySensor>
             </React.Fragment>
         );
     }

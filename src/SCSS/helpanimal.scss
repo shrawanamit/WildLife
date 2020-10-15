@@ -63,7 +63,7 @@
     color: #ffffff;
     background-color: #FEBF1C;
     font-weight: bold;
-    transition:all 1s linear;
+     transition:all .5s ease-in-out ;
 }
 .helpAnimalBody{
     padding: 10px 10px 10px 10px;
@@ -81,6 +81,7 @@
             display: flex;
             top:50% ;
             transition:all 1s linear;
+            transition: translateY(20px);
         }
     }
 }
@@ -125,7 +126,7 @@
     .gallery{
         // padding: 25px 10px 25px 10px;
         padding-right: 10px;
-        
+
         flex-direction: column;
     }
     .helpAnimalBody{
