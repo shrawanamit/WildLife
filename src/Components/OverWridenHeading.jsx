@@ -8,13 +8,32 @@ export default class OverWridenHeading extends React.Component {
     constructor(props){
         super(props);{
             this.state={
-                // heading:[...this.props.heading],
-                // baseText:this.props.heading.baseText,
+               
             }
         }
     }
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
+        
+      }
+  
+    //   componentWillUnmount() {
+    //       window.removeEventListener('scroll', this.handleScroll);
+    //   }
+
+    handleScroll=()=> {
+        let content=document.querySelector('.helpAnimalHeadingContainer');
+        let contentPosition=content.getBoundingClientRect().top;
+        let screenPosition =window.innerHeight;
+        if(contentPosition < screenPosition){
+            content.classList.add('addTrnsition')
+        }
+        else{
+            content.classList.remove('addTrnsition')
+        }
+    }
+
     render() {
-        // console.log("props",this.state.heading,"baseText",this.props);
         return (
             <div className="helpAnimalHeadingContainer">
                 <div className="helpAnimalHeading">

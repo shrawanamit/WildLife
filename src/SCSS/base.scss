@@ -85,18 +85,18 @@ $toolbar-color:rgb(68, 65, 65);
 
 }
 .bigFont{
-    font-size:11em;
+    font-size:13vw;
     line-height: 1.08em;
-    font-weight: 800;
+    font-weight: 700;
     color: transparent;
     -webkit-text-stroke: 2px #ffffff
 }
 .wildCats{
-    font-size:5em;
+    font-size:6.5vw;
     font-weight: 300;
 }
 .wildCatsMessage{
-    font-size: 21px;
+    font-size: 1.75vw;
     align-items: flex-start;
 }
 .caption{
@@ -120,7 +120,7 @@ display: flex;
     
  
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 710px) {
     .aboutUs{
         display: none;
     }

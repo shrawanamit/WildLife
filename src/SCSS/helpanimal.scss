@@ -12,10 +12,17 @@
 .helpAnimalHeadingContainer{
     @include flexColoumCenter();
     align-items: center;
+    opacity: 1;
+    transform: scale(0.9);
+    transition: all 1s ease-in-out;
    
 }
+.addTrnsition{
+    opacity: 1;
+    transform: scale(1);
+}
 .helpAnimalHeading{
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,14 +34,14 @@
     font-weight: 800;
     color: transparent;
      -webkit-text-stroke: 2px lightgrey;
-    font-size: 5rem;
+    font-size: 5vw;
 }
 .uppertext{
     position: absolute;
     font-family: "Lato", sans-serif;
     font-weight: 800;
     color: #151515;
-    font-size: 52px;
+    font-size: 5vw;
   
 }
 .helpAnimalHeadingParagraph{
@@ -51,6 +58,9 @@
     padding: 10px 0px 10px 0px;
     justify-content: space-between;
     flex-wrap: wrap;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 1s ease-in-out;
 
 }
 .donate{
@@ -63,27 +73,35 @@
     color: #ffffff;
     background-color: #FEBF1C;
     font-weight: bold;
-     transition:all .5s ease-in-out ;
+    transition:all .5s ease-out ;
 }
 .helpAnimalBody{
     padding: 10px 10px 10px 10px;
     @include flexColoumCenter();
     text-align: center;
     position: relative;
+   
+    
     .donate{
-        display: none;
+        // display: none;
+        opacity: 0;
     }
     
 }
 .helpAnimalBody{
     &:hover { 
         .donate{
+            opacity: 1;
             display: flex;
-            top:50% ;
-            transition:all 1s linear;
-            transition: translateY(20px);
+            top:47% ;
+            transition:all .20s linear;
+           
         }
     }
+}
+.active{
+ opacity: 1;
+ transform: scale(1);
 }
 .donate{
     &:hover{
@@ -93,8 +111,10 @@
 }
 
 .helpAnimalImage{
-    width:420px ;
+    width:420px;
+    
 }
+
 .helpAnimalImageHeading{
     padding: 10px;
     font-size: 25px;
@@ -105,7 +125,7 @@
     font-weight: 400;
     color: orange;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 710px) {
     .savedAnimalContainer{
        padding: 85px 10px 85px 10px;
        display: flex;
@@ -134,6 +154,15 @@
     }
     .helpAnimalImage{
         width: 100%;
+    }
+    .zoom{
+        left: 42%;
+    }
+    .helpAnimalBodyContainer{
+        justify-content: center;
+    }
+    .donate{
+        left: 35%;
     }
 
 }
