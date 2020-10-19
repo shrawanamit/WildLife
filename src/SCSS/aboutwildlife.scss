@@ -54,12 +54,12 @@
      justify-content: center;
      align-items: center;
      transition: transform .5s ease-in-out;
-     opacity: 0;      
+     opacity: 0;  
+     
 }
  .aboutTeam2Translate{
     opacity: 1;
     transform: translateY(15px);
-   
  }
  .aboutTeamTranslate{
     opacity: 1;
@@ -69,6 +69,10 @@
     opacity: 1;
     transform: translateX(-60px) ;
  }
+//  @keyframes mymove {
+//     from {top: 0px;}
+//     to {top: 100px;}
+//   }
 
 .teamHeading{
     padding: 12px 0px 12px 0px ;
