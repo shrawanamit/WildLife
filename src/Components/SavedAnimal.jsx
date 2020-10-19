@@ -13,6 +13,22 @@ export default class SavedAnimal extends React.Component {
             }
         }
     }
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
+        
+      }
+
+    handleScroll=()=> {
+        let content=document.querySelector('.galleryContainer');
+        let contentPosition=content.getBoundingClientRect().top;
+        let screenPosition =window.innerHeight/1;
+        if(contentPosition < screenPosition){
+            content.classList.add('Translate')
+        }
+        else{
+            content.classList.remove('Translate')
+        }
+    }
     render() {
         return (
             <div className="savedAnimalContainer">

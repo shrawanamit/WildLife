@@ -30,7 +30,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.aboutTeamBody{
+@mixin aboutTeam {
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -39,6 +39,37 @@
     align-items: center;
     text-align: center;
 }
+.aboutTeamBody{
+    @include aboutTeam();
+}
+.aboutTeamBody1{
+    @include aboutTeam();
+    transition: transform .5s ease-in-out;
+    opacity: 0;  
+ }
+.translateCenter{
+    overflow: hidden;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     transition: transform .5s ease-in-out;
+     opacity: 0;      
+}
+ .aboutTeam2Translate{
+    opacity: 1;
+    transform: translateY(15px);
+   
+ }
+ .aboutTeamTranslate{
+    opacity: 1;
+    transform: translateX(60px) ;
+ }
+ .aboutTeam1Translate{
+    opacity: 1;
+    transform: translateX(-60px) ;
+ }
+
 .teamHeading{
     padding: 12px 0px 12px 0px ;
     font-size: 27px;

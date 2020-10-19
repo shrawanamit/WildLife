@@ -9,7 +9,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 1s ease-in-out;
     opacity: 0;
 }
 .addTranslate{
@@ -39,6 +39,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    transition: transform 1s ease-in-out;
+    opacity: 0;
 }
 .zoom{
     position: absolute;
@@ -63,10 +65,16 @@
     display: flex;
     position: relative;
     justify-content: center;
+    
+
     .zoom{
         display: none;
     }
   
+}
+.Translate{
+    opacity: 1;
+    transform: translateY(50px) ;
 }
 .galleryImage{
     width: 100%;
