@@ -6,12 +6,11 @@ import gallery5 from '../assets/gallery2.jpg'
 import OverWridenHeading from './OverWridenHeading'
 export default class SavedAnimal extends React.Component {
     constructor(props){
-        super(props);{
+        super(props);
             this.state={
                  image:[gallery1,gallery2,gallery5,gallery1,gallery2,gallery5,gallery1,gallery2],
                
             }
-        }
     }
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
@@ -37,7 +36,7 @@ export default class SavedAnimal extends React.Component {
                 { this.state.image.map((row)=>
                     <div className="gallery">
                         <div className="galleryDiv">
-                        <img src={row} className="galleryImage"/>
+                        <img alt='galleryImage' src={row} className="galleryImage"/>
                         </div>
                          <div className="zoom">ZOOM</div>
                     </div>)}

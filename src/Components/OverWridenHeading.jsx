@@ -6,20 +6,19 @@ import '../SCSS/helpanimal.scss';
 export default class OverWridenHeading extends React.Component {
     
     constructor(props){
-        super(props);{
+        super(props);
             this.state={
                
             }
-        }
     }
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
         
       }
   
-    //   componentWillUnmount() {
-    //       window.removeEventListener('scroll', this.handleScroll);
-    //   }
+      componentWillUnmount() {
+          window.removeEventListener('scroll', this.handleScroll);
+      }
 
     handleScroll=()=> {
         let content=document.querySelector('.helpAnimalHeadingContainer');

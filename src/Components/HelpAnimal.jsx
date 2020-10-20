@@ -91,7 +91,7 @@ render() {
             <div className="helpAnimalBodyContainer">
                 <div className="helpAnimalBody">
                     <div className="helpAnimalImage">
-                        <img src={Lions} className="helpAnimalImage" onScroll={this.handleScroll}
+                        <img  alt='lion'src={Lions} className="helpAnimalImage" onScroll={this.handleScroll}
                             style={{ position: this.state.scrolling ? 'transform: translateY(29px)' : 'transform: ' }} />
                         <div className="donate">DONATE</div>
                     </div>
@@ -100,7 +100,7 @@ render() {
                 </div>
                 <div className="helpAnimalBody">
                     <div className="helpAnimalImage">
-                        <img src={cheetah} className="helpAnimalImage" onScroll={this.handleScroll} />
+                        <img alt='cheetah'src={cheetah} className="helpAnimalImage" onScroll={this.handleScroll} />
                         <div className="donate">DONATE</div>
                     </div>
                     <span className="helpAnimalImageHeading">CHEETAHS</span>
@@ -108,7 +108,7 @@ render() {
                 </div>
                 <div className="helpAnimalBody">
                     <div className="helpAnimalImage">
-                        <img src={Tiger} className="helpAnimalImage" onScroll={this.handleScroll} />
+                        <img alt='tiger'src={Tiger} className="helpAnimalImage" onScroll={this.handleScroll} />
                         <div className="donate">DONATE</div>
                     </div>
                     <span className="helpAnimalImageHeading">TIGERS</span>

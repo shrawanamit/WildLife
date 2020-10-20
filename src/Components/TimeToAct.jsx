@@ -1,29 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../SCSS/timeToAct.scss';
 import Button from 'react-bootstrap/Button'
 
-export default class TimeToAct extends React.Component {
-    componentDidMount() {
-        window.addEventListener('scroll', this.handleScroll);
-        
-      }
+const TimeToAct = () => {
 
-    handleScroll=()=> {
-        let content=document.querySelector('.timeToActAnimation');
-        let contentPosition=content.getBoundingClientRect().top;
-        let screenPosition =window.innerHeight;
-        if(contentPosition < screenPosition){
+
+    function handleScroll() {
+        let content = document.querySelector('.timeToActAnimation');
+        let contentPosition = content.getBoundingClientRect().top;
+        let screenPosition = window.innerHeight;
+        if (contentPosition < screenPosition) {
             content.classList.add('addTranslate')
         }
-        else{
+        else {
             content.classList.remove('addTranslate')
         }
     }
+    useEffect(() => {
+        handleScroll();
+        // return () => { handleScroll() };
+    }, []);
 
-    render() {
-        return (
-            <div className="TimeToActContainer">
-              <div className="timeToActAnimation">
+
+    return (
+        <div className="TimeToActContainer">
+            <div className="timeToActAnimation">
                 <div className="timeToAct">
                     <span className="timeToActHeading">IT'S </span>
                     <span className="timeToActTime"> TIME</span>
@@ -32,8 +33,9 @@ export default class TimeToAct extends React.Component {
                 <div className="readMore">
                     <Button variant="warning" size="lg">READ MORE</Button>{' '}
                 </div>
-                </div>
             </div>
-        );
-    }
+        </div>
+    );
+
 }
+export default TimeToAct;

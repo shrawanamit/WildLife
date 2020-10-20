@@ -32,7 +32,7 @@ export default class DashBoard extends React.Component {
                 <div className='toolBarContainer'>
                     <div className="toolbar">
                         <div className="toolbarHeading">
-                            <img src={logo} className="logo" />
+                            <img alt='logo' src={logo} className="logo" />
                         </div>
                         <div className="toolbarcontent">
                             <spam className="aboutUs">ABOUT US</spam>

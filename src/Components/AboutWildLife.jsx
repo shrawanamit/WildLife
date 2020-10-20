@@ -8,10 +8,9 @@ import VisibilitySensor from "react-visibility-sensor";
 
 export default class AboutWildLife extends React.Component {
     constructor(props) {
-        super(props); {
+        super(props)
             this.state = {
                 didViewCountUp: false,
-            }
         }
     }
     onVisibilityChange = isVisible => {
@@ -57,7 +56,7 @@ export default class AboutWildLife extends React.Component {
                 <div className="AboutWildLifeContainer">
                     <div className="AboutWildLifeBody">
                         <div className="aboutUsImageContainer">
-                            <img src={AboutUs} className="aboutUsImage" />
+                            <img alt="aboutus" src={AboutUs} className="aboutUsImage" />
                         </div>
                         <div className="aboutUsImageMessage">
                             <div className="helpAnimalHeading">
@@ -71,7 +70,7 @@ export default class AboutWildLife extends React.Component {
                             <Button variant="warning" size="lg">READ MORE</Button>{' '}
                         </div>
                     </div>
-                    <img src={bgcolor} className="aboutUsBgColor" />
+                    <img alt='bgcolor' src={bgcolor} className="aboutUsBgColor" />
 
                 </div>
                 <div className="aboutTeamContainer">

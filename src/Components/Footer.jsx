@@ -12,7 +12,7 @@ export default class Footer extends React.Component {
         return (
             <div className="footerContainer">
                 <div>
-                    <img src={logo} />
+                    <img alt='logo'src={logo} />
                 </div>
 
                 <div className="footerHeading">
